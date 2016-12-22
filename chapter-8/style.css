@@ -1,0 +1,48 @@
+aside, article, section, header, footer, nav {
+	display: block;
+}
+
+html,body,div,h1,h2,h3,p,ul,li{
+
+	margin:0;
+	padding: 0;
+}
+
+html {
+	background: #333;
+}
+body {
+	margin: 0 auto;
+	padding: 0 25px 25px;
+	width: 900px;
+	background: #fff;
+	font: 90%/1.8 Georgia, "Times New Roman", Times, serif;
+}
+h1 {
+	margin-bottom: 1.2em;
+	font-weight: normal;
+	border-bottom: 1px solid black;
+}
+h2 {
+	margin-bottom: .6em;
+	font-weight:normal;
+}
+p {
+	margin-bottom: 1em;
+}
+ul {
+	list-style: none;
+}
+li {
+	font: 1.2em Arial, Helvetica, sans-serif;
+	margin-bottom: 1.4em;
+}
+a {
+	text-decoration: none;
+	color: #C68034;
+}
+a:hover {
+	color: #666;
+}
+
+collection of styles that are desined to neturalized of the browser deault styling
