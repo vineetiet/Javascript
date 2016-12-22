@@ -1,0 +1,63 @@
+aside, article, section, header, footer, nav {
+	display: block;
+}
+article, div, h1, h2, p {
+	margin: 0;
+	padding:0;
+}
+html {
+	background: url(images/grid.gif) 5px 5px;
+}
+body {
+	width: 960px;
+	margin: 0 auto;
+	font: 10px Arial, Arial, Helvetica, sans-serif;
+}
+.em {
+	float: left;
+	width: 520px;
+	margin-bottom: 50px;
+	background: rgba(237,198,75,.6);
+}
+.percentages {
+	float: right;
+	width: 380px;
+	background: rgba(109,154,197,.4);
+	margin-bottom: 50px;
+}
+footer {
+	clear: both;
+}
+/*add styles here*/
+h1 {
+	
+	font-size: 3em;  /*= 30px*/
+	margin-bottom: 2em; /*= 30px*/
+}
+h2 {
+	
+	font-size: 2em; /*= 20px*/
+	margin-bottom: 1em; /*= 20px; */
+}
+p {
+	font-size: 1.5em; /*= 15px*/
+	margin-bottom: 2em; /*= 30px*/
+}
+
+.em{
+
+	padding: 1em; /* = 10px inherit from parent, later if we add font-size: 1.5, padding will be also bigger to 15px;*/
+	font-size: 1.5em; /* not only the padding going to get bigger but everything inside in it gets larger.*/
+}
+
+.percentages{
+	padding: 1em; =10px inherit from parent, 
+}
+
+/*em is a releative unit measurement, 1 em is equal to default font size
+if you use font-size with em, it relative to parent font-size, if em is used 
+with any other property then property  is relative to that element font size.
+
+In this case, em is the paret element of h2, so em will have the font-size = 1.5em = 15px,
+that 15px will be inherit to the h2, now the h2 font-size will become 2em = 15*2 = 30 px.
+and the margin-bottom of h2 will be = 30 * 2 = 60 px; (it's relative to it's element font size)*/
