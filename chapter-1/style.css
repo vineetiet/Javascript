@@ -1,0 +1,40 @@
+aside, article, section, header, footer, nav {
+	display: block;
+}
+div, p {
+	margin: 0;
+	padding:0;
+}
+html {
+	background: #ccc;
+}
+.outer {
+	width: 400px;
+	height: 600px;
+	margin: 0 auto;
+	background: #9CF;
+	padding: 1px;
+
+	border-style: solid;
+	border-color: red;
+	border-top-width: 5px;
+}
+.box{
+	border-style: solid;
+	border-color: green;
+	border-top-width: 5px;
+
+	background: #f90;  /*we are not seeing the background color because it react inside other element. they occupie own space on the document.*/
+	width: 300px;   /*if the block level element does not defines its width and height it just occupy the the complete spacd of container elemenet.*/
+	height: 300px;
+	padding: 25px;  /*padding is the space inside the element and though we have defined the 300px width and height but div has the woidth of 350px*/
+	border: 2px solid black; /* width is now 354pc */
+	margin: 25px; /* it does not always calculates the width of the element it controlles from one element to another.
+}
+p {
+	background: #EEA458;
+	height: 100%;
+
+	
+}
+	
