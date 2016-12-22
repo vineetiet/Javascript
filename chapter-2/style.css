@@ -1,0 +1,58 @@
+aside, article, section, header, footer, nav {
+	display: block;
+}
+div, p {
+	margin: 0;
+	padding:0;
+}
+html {
+	background: #ccc;
+}
+.outer {
+	width: 600px;
+	margin: 0 auto;
+	background: #9CF;
+	padding: 50px;
+	/*height: 800px;*/
+	/*overflow: hidden;*/
+
+	border-style: solid;
+	border-color: red;
+	border-width: 5px;
+
+	/*We added the padding to the container to 50 px, it will make 100px room to the containing div 
+	but if we increase the width of content div, in this case padding will be sacrifice of the
+	contaning div.*/
+
+}	
+
+.box{
+	background: #B7D19C;
+	/*width: 500px;*/
+	/*padding: 50px;*/
+	width: 400px;
+	padding: 98px;
+	border: 2px solid black;
+	/*margin: 50px;
+	margin-right: 100px;*/
+
+	/*you can think there are two sort of blocks contaning block and cotent block
+	content block is border, padding and the width of the element and the containing
+	blocks are the margin edeges*/
+
+	/*Here the content length become 502 px but ideally the containg length becomes 602, but since 
+	the width we defined for containing block is 600px so it won't go beyond 600px*/
+
+	/*when the content element width is greater than the container width, the content div will overflow right
+	side of the container div. is the overflow happens on the containging div, you can control over low 
+	by overflow property*/
+
+	border-style: solid;
+	border-color: green;
+	border-width: 3px;
+}
+p {
+	background: #FF9;
+	height: 100%;
+}
+	
