@@ -1,0 +1,43 @@
+aside, article, section, header, footer, nav {
+	display: block;
+}
+ div, p {
+	margin: 0;
+	padding:0;
+}
+html {
+	background: url(images/grid.gif) 5px 5px;
+}
+body {
+	width: 600px;
+	margin: 0 auto;
+	font: 100% Arial, Arial, Helvetica, sans-serif;
+}
+h1 {
+	margin:1em 0;
+}
+/*add styles here*/
+p {
+	background: rgba(237,226,197,.8);
+	line-height:20px;
+	margin: 10px 0;
+	margin-top: 20px;
+}
+div {
+	background: rgba(109,154,197,.8);
+	margin:10px 0;
+	border: 1px solid black;
+}
+
+
+case1: Add margin to p to 10 at top and bottom: We will get only 10pc space between each p. becuase of margin
+	   are toucing for both p's, it should have been 20 px space between the two p's.
+Case2: add unequal margin, margin-top: 20px to each p, if we have two margin touching each other one is 20 px
+		and other is 10 px, always get the larger of two values, in this case space between two p's will be 20px;
+
+case3: what happen if margin between child element and parent element touch each other. The reason betwween the 
+		div's and p are collasping becuase, margins are touching, that means there is no padding, no borders between
+		them, If margin have something seperating them then they do not collapse. Add border to div margin 
+		doen not collapse. So here margin are not touching becuase border is seperating them. Or it could 
+		be padding
+This is applicable for vertical margins

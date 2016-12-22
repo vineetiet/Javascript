@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>calculating element dimensions</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<article>
+<h1>Vertical margin collapse</h1>
+<p>When two block-level elements are stacked on top of one another in normal document flow, their margins collapse. If the top and bottom margins of the two elements are equal in value, that value is used. If not, the greater of the two values is used to define the space between the elements.</p>
+<p>This prevents paragraphs, headings, and other typographic elements from having "double-spacing" between the elements. It can, however, have unintended consequences for your layouts if you're not careful as the vertical margins of <em>all</em> elements collapse, not just textual elements.</p>
+<div>
+<p>This can be particularily tricky when you consider parent and child elements. Without something to keep the margins from touching (such as padding or a border), those margins collapse as well.</p>
+</div>
+<div>
+<p>This means that if you set a top margin on a heading or paragraph inside a container element to hold it away from the top edge of the container, you're not guarenteed that you'll get the results you're after unless you account for margin collapse.</p>
+</div>
+</body>
+</html>
