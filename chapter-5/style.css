@@ -1,0 +1,56 @@
+aside, article, section, header, footer, nav {
+	display: block;
+}
+article, div, h1, h2, p {
+	margin: 0;
+	padding:0;
+}
+html {
+	background: url(images/grid.gif) 5px 5px;
+}
+body {
+	width: 80%;
+	margin: 0 auto;
+	font: 100% Arial, Arial, Helvetica, sans-serif;
+}
+.em {
+	float: left;
+	width: 60%;
+	margin-bottom: 50px;
+	background: rgba(237,198,75,.6);
+	padding: 1%;
+}
+.percentages {
+	float: right;
+	width: 30%;
+	background: rgba(109,154,197,.4);
+	margin-bottom: 50px;
+	padding: 1%;
+}
+footer {
+	clear: both;
+}
+h1 {
+	font-size: 1.8em;
+	margin-bottom: 1em;
+}
+h2 {
+	font-size: 1.4em;
+	margin-bottom: 5%;
+}
+p {
+	font-size: 1em;
+	margin-bottom: 1em;
+}
+
+/*if you use % on box model properties like width, padding and margins, they are calculated relative to the width
+of parent element. body width, 80% is relative to view port, 80% of the avail view port*/
+
+/*em and percentages are sitting inside the Article, 60% and 30% are relative to width of Article. Now the 
+Article is a block level element, getting its widith from body because we have not set explicitly set the 
+width of the Article. So that 60 and 30% , they are really asking for 60% of the body and 30% of the body
+becuase Article getting its width from body element. */
+
+/*Any time you use % on a box model property in terms of calculating the value , it calculates relative
+to its parent.
+% should not be used border width, they are not allowed.*/
