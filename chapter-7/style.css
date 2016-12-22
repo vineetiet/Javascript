@@ -1,0 +1,126 @@
+aside, article, section, header, footer, nav {
+	display: block;
+}
+html {
+	background: #ccc;
+}
+body {
+	margin: 0 auto;
+	width: 850px;
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	background: #fff;
+	padding: 25px;
+}
+pre {
+	padding: 20px;
+	background: #EDE2C5;
+	width: 600px;
+	margin: 1em 0;
+	font-size: 1.2em;
+	overflow: auto;
+	line-height: 2;
+}
+h1, h2, h3, h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 1em;
+}
+h1 {
+	font-size: 1.6em;
+}
+h2 {
+	font-size: 1.4em;
+}
+h3, h4 {
+	font-size: 1.2em;
+}
+h4 {
+	padding: 10px;
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+	background: rgb(123, 121, 143);
+}
+.none {
+	background: rgb(219,126,64);
+	color: white;
+	font-weight: normal;
+	padding: 0 25px;
+	font-size: 1.8em;
+	line-height: 1.8;
+}
+	aside, article, section, header, footer, nav {
+	display: block;
+}
+html {
+	background: #ccc;
+}
+body {
+	margin: 0 auto;
+	width: 850px;
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	background: #fff;
+	padding: 25px;
+}
+pre {
+	padding: 20px;
+	background: #EDE2C5;
+	width: 600px;
+	margin: 1em 0;
+	font-size: 1.2em;
+	overflow: auto;
+	line-height: 2;
+}
+h1, h2, h3, h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 1em;
+}
+h1 {
+	font-size: 1.6em;
+}
+h2 {
+	font-size: 1.4em;
+}
+h3, h4 {
+	font-size: 1.2em;
+}
+h4 {
+	padding: 10px;
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+	background: rgb(123, 121, 143);
+}
+.none {
+	background: rgb(219,126,64);
+	color: white;
+	font-weight: normal;
+	padding: 0 25px;
+	font-size: 1.8em;
+	line-height: 1.8;
+}
+	
+li{
+	display: inline;
+}
+
+img{
+	display: block;
+	margin-bottom: 1em;
+}
+.inlineB{
+
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.tall{
+	height: 200px;
+}
+
+.none{
+	visibility: hidden;
+}
+
+/*tall element push the bottom content down and did not distrub other content.*/
+/*even though the viibility is hidden but the space of the content is still there but if we use display: none 
+not hidden, that space also for that element is gone.*/
